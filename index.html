@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GermanLab</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/1cd167b8ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <h2 class="header-nav-title">GermanLab</h2>
+        <ul>
+          <li><a class="nav-link" href="./index.html">Home</a></li>
+          <li>
+            <a class="nav-link" href="./pages/how_it_works.html"
+              >How it works</a
+            >
+          </li>
+          <li><a class="nav-link" href="./pages/explore.html">Explore</a></li>
+          <li><a class="nav-link" href="./pages/pricing.html">Pricing</a></li>
+          <li>
+            <a class="nav-link" href="./pages/try_it_for_free.html"
+              >Try for free</a
+            >
+          </li>
+        </ul>
+        <button class="btn-mobile-nav">
+          <i class="fa-solid fa-bars fa-2xl" name="menu-outline"></i>
+          <i class="fa-solid fa-xmark fa-2xl" name="close-outline"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="home">
+        <div class="home-features">
+          <h1 class="home-title">
+            Welcome to GermanLab - Your Gateway to Learning German
+          </h1>
+          <p class="home-description">
+            At GermanLab, our mission is to make learning German engaging,
+            efficient, and tailored to your needs.
+            <!-- We combine the power of
+            custom flashcards with cutting-edge AI technology to provide you
+            with a unique language learning experience. -->
+          </p>
+          <div class="features-container">
+            <ul class="home-features-list">
+              <li class="home-feature">
+                <div class="home-feature-icon">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <span>Customizable Flashcards</span>
+              </li>
+              <li class="home-feature">
+                <div class="home-feature-icon">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <span> AI-powered Learning </span>
+              </li>
+              <li class="home-feature">
+                <div class="home-feature-icon">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <span> Vocabulary Building </span>
+              </li>
+            </ul>
+            <ul class="home-features-list">
+              <li class="home-feature">
+                <div class="home-feature-icon">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <span> Pronunciation Practice </span>
+              </li>
+              <li class="home-feature">
+                <div class="home-feature-icon">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <span> Progress Tracking </span>
+              </li>
+              <li class="home-feature">
+                <div class="home-feature-icon">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <span> Mobile Accessibility </span>
+              </li>
+            </ul>
+          </div>
+          <div class="home-buttons-container">
+            <div class="home-button">
+              <button class="button call-to-action">
+                <a href="">Start Learning German</a>
+              </button>
+            </div>
+            <div class="home-button">
+              <button class="button learn-more">
+                <a href="">Learn more</a>
+                <i class="fa-solid fa-arrow-down learn-more-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="home-right-image">
+          <img src="./images/german-lab.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <h2>Let's learn together</h2>
+      <p>Follow us</p>
+      <div class="socialmedia-icons">
+        <a href="#" class="fa fa-github icon-footer" target="_blank"></a>
+
+        <a
+          href="#"
+          class="fa fa-linkedin icon-footer"
+          id="profile-link"
+          target="_blank"
+        ></a>
+        <a href="#" class="fa fa-instagram icon-footer" target="_blank"></a>
+        <a href="#" class="fa fa-facebook icon-footer" target="_blank"></a>
+        <a href="#" class="fa fa-youtube icon-footer" target="_blank"></a>
+      </div>
+
+      <p>Copyright &copy; GermanLab</p>
+      <button>Contact us</button>
+    </footer>
+    <script>
+      const menu = document.querySelector(".btn-mobile-nav");
+      const header = document.querySelector("header");
+      const links = document.querySelectorAll("a[class=nav-link]");
+      console.log(links);
+      const setMenu = () => header.classList.toggle("nav-open");
+      const closeMenu = () => header.classList.remove("nav-open");
+      menu.addEventListener("click", setMenu);
+      links.forEach((a) => a.addEventListener("click", closeMenu));
+    </script>
+  </body>
+</html>

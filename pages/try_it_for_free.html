@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/1cd167b8ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body-form">
+    <header class="header">
+      <nav class="header-nav">
+        <h2 class="header-nav-title">GermanLab</h2>
+        <ul>
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li>
+            <a class="nav-link" href="./how_it_works.html">How it works</a>
+          </li>
+          <li><a class="nav-link" href="./explore.html">Explore</a></li>
+          <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
+          <li>
+            <a class="nav-link" href="./try_it_for_free.html">Try for free</a>
+          </li>
+        </ul>
+        <button class="btn-mobile-nav">
+          <i class="fa-solid fa-bars fa-2xl" name="menu-outline"></i>
+          <i class="fa-solid fa-xmark fa-2xl" name="close-outline"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="main-form">
+      <div class="header-form">
+        <h1 id="title" class="h1-form">Learn German 1 month for free!</h1>
+        <p id="description">
+          Are you interested in using German Lab? let us know who you are and
+          we'll reach you out!
+        </p>
+      </div>
+      <form action="" id="survey-form">
+        <fieldset class="personal-info">
+          <label for="name" id="name-label"
+            >Enter your name:
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Type your name here"
+          /></label>
+          <label for="email" id="email-label"
+            >Enter your email:
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your@email.com"
+          /></label>
+          <label for="number" id="number-label"
+            >Enter your number:
+            <input
+              type="number"
+              id="number"
+              required
+              min="0"
+              max="10"
+              placeholder="Enter a number [0-10]"
+          /></label>
+        </fieldset>
+        <fieldset class="another-info">
+          <div for="dropdown">
+            <p>Where did you here from us?</p>
+            <select name="dropdown" id="dropdown">
+              <option value="">(select one choice)</option>
+              <option value="1">Facebook</option>
+              <option value="2">Instagram</option>
+              <option value="3">LinkedIn</option>
+            </select>
+          </div>
+          <div for="gender">
+            <p>Choose your gender</p>
+            <label for="male"
+              ><input type="radio" name="gender" id="male" value="male" />
+              Male</label
+            >
+            <label for="female"
+              ><input type="radio" name="gender" id="female" value="male" />
+              Female</label
+            >
+          </div>
+          <div for="personalInterests">
+            <p>Tell us your personal interests:</p>
+            <label for="music"
+              ><input
+                type="checkbox"
+                name="personalInterests"
+                id="music"
+                value="music"
+              />
+              Music
+            </label>
+            <label for="origami">
+              <input
+                type="checkbox"
+                name="personalInterests"
+                id="origami"
+                value="origami"
+              />
+              Origami
+            </label>
+            <label for="coding">
+              <input
+                type="checkbox"
+                name="personalInterests"
+                id="coding"
+                value="coding"
+              />
+              Coding
+            </label>
+            <label for="weightlifting">
+              <input
+                type="checkbox"
+                name="personalInterests"
+                id="weightlifting"
+                value="coding"
+              />
+              weightlifting
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="feedback">
+          <label for="feedback">
+            <p>How can we customize our service to you?</p>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer class="footer" id="footer">
+      <h2>Let's learn together</h2>
+      <p>Follow us</p>
+      <div class="socialmedia-icons">
+        <a href="#" class="fa fa-github icon-footer" target="_blank"></a>
+
+        <a
+          href="#"
+          class="fa fa-linkedin icon-footer"
+          id="profile-link"
+          target="_blank"
+        ></a>
+        <a href="#" class="fa fa-instagram icon-footer" target="_blank"></a>
+        <a href="#" class="fa fa-facebook icon-footer" target="_blank"></a>
+        <a href="#" class="fa fa-youtube icon-footer" target="_blank"></a>
+      </div>
+
+      <p>Copyright &copy; GermanLab</p>
+      <button>Contact us</button>
+    </footer>
+    <script>
+      const menu = document.querySelector(".btn-mobile-nav");
+      const header = document.querySelector("header");
+      const links = document.querySelectorAll("a[class=nav-link]");
+      console.log(links);
+      const setMenu = () => header.classList.toggle("nav-open");
+      const closeMenu = () => header.classList.remove("nav-open");
+      menu.addEventListener("click", setMenu);
+      links.forEach((a) => a.addEventListener("click", closeMenu));
+    </script>
+  </body>
+</html>
