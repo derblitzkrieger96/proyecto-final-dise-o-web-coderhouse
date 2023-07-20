@@ -60,3 +60,26 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .main-explore {
+    div {
+      padding: 3rem 0.5rem;
+    }
+    .explore-container {
+      display: flex;
+      flex-direction: column;
+      .explore-container-element {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 0;
+        h2 {
+          text-align: center;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

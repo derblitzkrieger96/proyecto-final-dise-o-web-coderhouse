@@ -270,6 +270,39 @@ body .main {
   border-radius: 9px;
 }
 
+@media (max-width: 576px) {
+  body .main {
+    height: auto;
+  }
+  body .main #home {
+    flex-direction: column-reverse;
+  }
+  body .main #home .home-right-image {
+    width: 100%;
+    padding-top: 1rem;
+  }
+  body .main #home .home-right-image img {
+    max-width: 70%;
+  }
+  body .main #home .home-features {
+    width: 90%;
+  }
+  body .main #home .home-features .home-description {
+    margin-bottom: 0;
+  }
+  body .main #home .home-features .features-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  body .main #home .home-features .home-buttons-container {
+    flex-direction: column;
+    height: 7rem;
+    gap: 1rem;
+  }
+  body .main #home .home-features .home-buttons-container .home-button {
+    width: 90%;
+  }
+}
 #how_it_works {
   background: linear-gradient(to bottom right, #f0f9fa, #94d2bd);
   color: #03045e;
@@ -668,6 +701,26 @@ body .main {
   border-radius: 9px;
 }
 
+@media (max-width: 576px) {
+  .main-explore div {
+    padding: 3rem 0.5rem;
+  }
+  .main-explore .explore-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-explore .explore-container .explore-container-element {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+  .main-explore .explore-container .explore-container-element h2 {
+    text-align: center;
+  }
+  .main-explore .explore-container .explore-container-element img {
+    max-width: 100%;
+  }
+}
 .footer {
   box-sizing: border-box;
   display: block;

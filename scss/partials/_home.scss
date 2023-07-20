@@ -116,3 +116,37 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  body .main {
+    height: auto;
+    #home {
+      flex-direction: column-reverse;
+      .home-right-image {
+        width: 100%;
+        padding-top: 1rem;
+        img {
+          max-width: 70%;
+        }
+      }
+      .home-features {
+        width: 90%;
+        .home-description {
+          margin-bottom: 0;
+        }
+        .features-container {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        .home-buttons-container {
+          flex-direction: column;
+          height: 7rem;
+          gap: 1rem;
+          .home-button {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
