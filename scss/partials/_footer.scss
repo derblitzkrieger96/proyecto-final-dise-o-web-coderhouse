@@ -1,0 +1,48 @@
+.footer {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+  color: #ddd6fe;
+  background-color: #03045e;
+  * {
+    margin: 0.5rem;
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  button {
+    height: 2.5rem;
+    border: none;
+    border-radius: 9px;
+    width: 8rem;
+    color: #03045e;
+    background-color: #ddd6fe;
+    font-size: 1.2rem;
+    &:hover {
+      background-color: #03045e;
+      color: #ddd6fe;
+      border: 1px solid #ddd6fe;
+      cursor: pointer;
+    }
+  }
+  .socialmedia-icons {
+    height: 4rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    .icon-footer {
+      color: #e0f2fe;
+      width: 3rem;
+      font-size: 2.5rem;
+      text-decoration: none;
+      height: 3rem;
+      transition: transform 0.1s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

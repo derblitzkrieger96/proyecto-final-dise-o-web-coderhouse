@@ -1,0 +1,56 @@
+.main-explore {
+  background-color: #e0f2fe;
+  div {
+    padding: 3rem;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    padding: 2rem;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    height: 2rem;
+    border-radius: 9px;
+    width: auto;
+    padding: 0 0.5rem;
+    background-color: #ee9b00;
+    color: #fff;
+    border: none;
+    &:hover {
+      background-color: #fff;
+      color: #ee9b00;
+      border: 1px solid #ee9b00;
+      cursor: pointer;
+    }
+  }
+  .explore-container {
+    background-color: #023e8a;
+    color: #e0f2fe;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    .explore-container-element {
+      width: 45%;
+      img {
+        border-radius: 50%;
+      }
+      div {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        i {
+          height: 2rem;
+          width: 2rem;
+          background-color: #ee9b00;
+          color: #fff;
+          border-radius: 9px;
+        }
+      }
+    }
+  }
+}
