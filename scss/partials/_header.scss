@@ -30,6 +30,7 @@
         text-align: center;
         display: flex;
         align-items: center;
+        border-radius: 9px;
         a:hover {
           color: #ade8f4;
           text-decoration: underline;
@@ -46,16 +47,29 @@
             text-decoration: none;
           }
         }
-        &:last-of-type:hover {
-          background-color: #fff;
-          color: #ee9b00;
-          cursor: pointer;
+        &:last-of-type {
+          &:hover {
+            background-color: #fff;
+            color: #ee9b00;
+            cursor: pointer;
+          }
+          &:focus,
+          &:active {
+            outline: none;
+            box-shadow: 0 0 0 0.8rem rgb(238, 155, 0, 0.5);
+          }
         }
         a {
           color: inherit;
           font-size: 1.2rem;
           text-decoration: none;
           width: 100%;
+          &:not(.no-focus):focus,
+          &:not(.no-focus):active {
+            outline: none;
+            box-shadow: 0 0 0 0.8rem rgb(173, 232, 244, 0.5);
+            border-radius: 4px;
+          }
         }
       }
     }
