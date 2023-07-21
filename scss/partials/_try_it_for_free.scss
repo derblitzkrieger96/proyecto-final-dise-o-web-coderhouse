@@ -1,10 +1,12 @@
+@import "variables";
+
 .body-form {
   font-weight: 400;
   font-size: 1rem;
-  background-color: #94d2bd;
+  background-color: $blue-light-2;
   .main-form {
     font-family: Tahoma;
-    color: white;
+    color: $white;
     width: 40rem;
     max-width: 90%;
     margin: 1rem auto;
@@ -105,18 +107,18 @@
         display: block;
         width: 100%;
         margin: 0.5rem auto;
-        background-color: #ee9b00;
-        color: #fff;
+        background-color: $yellow;
+        color: $white;
         border-radius: 9px;
-        border: 1px solid white;
+        border: 1px solid $white;
         height: 2.5rem;
         font-size: inherit;
         font-family: inherit;
         font-weight: 600;
         cursor: pointer;
         &:hover {
-          color: #ee9b00;
-          background-color: #fff;
+          color: $yellow;
+          background-color: $white;
         }
       }
     }

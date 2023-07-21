@@ -1,13 +1,15 @@
+@import "variables";
+
 .main-explore {
-  background-color: #e0f2fe;
+  background-color: $blue-light-3;
   div {
     padding: 3rem;
     .main-explore-main-text {
-      color: #023e8a;
+      color: $blue-dark;
     }
   }
   h1 {
-    color: #023e8a;
+    color: $blue-dark;
     text-align: center;
   }
   p {
@@ -20,21 +22,21 @@
     border-radius: 9px;
     width: auto;
     padding: 0 0.5rem;
-    background-color: #ee9b00;
-    color: #fff;
+    background-color: $yellow;
+    color: $white;
     border: none;
     font-size: 1.2rem;
     font-weight: 500;
     &:hover {
-      background-color: #fff;
-      color: #ee9b00;
-      border: 1px solid #ee9b00;
+      background-color: $white;
+      color: $yellow;
+      border: 1px solid $yellow;
       cursor: pointer;
     }
   }
   .explore-container {
-    background-color: #023e8a;
-    color: #e0f2fe;
+    background-color: $blue-dark;
+    color: $blue-light-3;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -52,8 +54,8 @@
         i {
           height: 2rem;
           width: 2rem;
-          background-color: #ee9b00;
-          color: #fff;
+          background-color: $yellow;
+          color: $white;
           border-radius: 9px;
         }
       }

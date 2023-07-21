@@ -1,13 +1,15 @@
+@import "variables";
+
 #how_it_works {
-  background: linear-gradient(to bottom right, #f0f9fa, #94d2bd);
-  color: #03045e;
+  background: linear-gradient(to bottom right, $white-light, $blue-light-2);
+  color: $blue-extra-dark;
   .container {
     padding: 3rem 0;
     .row {
       h2 {
         font-size: 4rem;
         font-weight: 700;
-        color: #4d4a57;
+        color: $gray;
       }
       .title-h3 {
         counter-increment: my-counter;
@@ -27,18 +29,20 @@
     div {
       .img-container {
         position: relative;
+        @mixin animation-linear-gradient($scale) {
+          transform: translate(-45%, -50%) scale($scale);
+          animation-timing-function: ease-in-out;
+        }
+
         @keyframes gradientAnimation {
           0% {
-            transform: translate(-45%, -50%) scale(1.05);
-            animation-timing-function: ease-in-out;
+            @include animation-linear-gradient(1.05);
           }
           50% {
-            transform: translate(-45%, -50%) scale(1);
-            animation-timing-function: ease-in-out;
+            @include animation-linear-gradient(1);
           }
           100% {
-            transform: translate(-45%, -50%) scale(1.05);
-            animation-timing-function: ease-in-out;
+            @include animation-linear-gradient(1.05);
           }
         }
         &::before {
@@ -52,9 +56,9 @@
           border-radius: 50%;
           background: radial-gradient(
             circle,
-            rgba(0, 0, 0, 7) 0%,
-            rgba(0, 0, 0, 0.3) 60%,
-            rgba(0, 0, 0, 0.1) 50%
+            $black-radial-first 0%,
+            $black-radial-second 60%,
+            $black-radial-third 50%
           );
           pointer-events: none;
           animation: gradientAnimation 2s infinite;
