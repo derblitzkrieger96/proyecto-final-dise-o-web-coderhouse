@@ -1,11 +1,12 @@
+@import "variables";
 .footer {
   box-sizing: border-box;
   display: block;
   text-align: center;
   padding: 2rem;
   margin: 0 auto;
-  color: #ddd6fe;
-  background-color: #03045e;
+  color: $white-light;
+  background-color: $blue-extra-dark;
   * {
     margin: 0.5rem;
   }
@@ -18,13 +19,13 @@
     border: none;
     border-radius: 9px;
     width: 8rem;
-    color: #03045e;
-    background-color: #ddd6fe;
+    color: $blue-extra-dark;
+    background-color: $white-light;
     font-size: 1.2rem;
     &:hover {
-      background-color: #03045e;
-      color: #ddd6fe;
-      border: 1px solid #ddd6fe;
+      background-color: $blue-extra-dark;
+      color: $white-light;
+      border: 1px solid $white-light;
       cursor: pointer;
     }
   }
@@ -34,7 +35,7 @@
     display: flex;
     justify-content: center;
     .icon-footer {
-      color: #e0f2fe;
+      color: $white-light;
       width: 3rem;
       font-size: 2.5rem;
       text-decoration: none;

@@ -112,7 +112,7 @@ body .main {
   }
   .header .header-nav .btn-mobile-nav i[name=menu-outline] {
     display: block;
-    color: #ade8f4;
+    color: #e0f2fe;
   }
   .header .header-nav .btn-mobile-nav i[name=close-outline] {
     display: none;
@@ -126,7 +126,7 @@ body .main {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #ade8f4;
+    background-color: #e0f2fe;
     color: #03045e;
     width: 100%;
     height: 100vh;
@@ -727,7 +727,7 @@ body .main {
   text-align: center;
   padding: 2rem;
   margin: 0 auto;
-  color: #ddd6fe;
+  color: #f0f9fa;
   background-color: #03045e;
 }
 .footer * {
@@ -743,13 +743,13 @@ body .main {
   border-radius: 9px;
   width: 8rem;
   color: #03045e;
-  background-color: #ddd6fe;
+  background-color: #f0f9fa;
   font-size: 1.2rem;
 }
 .footer button:hover {
   background-color: #03045e;
-  color: #ddd6fe;
-  border: 1px solid #ddd6fe;
+  color: #f0f9fa;
+  border: 1px solid #f0f9fa;
   cursor: pointer;
 }
 .footer .socialmedia-icons {
@@ -759,7 +759,7 @@ body .main {
   justify-content: center;
 }
 .footer .socialmedia-icons .icon-footer {
-  color: #e0f2fe;
+  color: #f0f9fa;
   width: 3rem;
   font-size: 2.5rem;
   text-decoration: none;
