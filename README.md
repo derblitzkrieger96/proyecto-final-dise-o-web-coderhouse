@@ -37,7 +37,7 @@ The GermanLab website comprises five main pages:
 - Comprehensive pricing plans to cater to diverse budgets
 
 ## Preview
-
+You can visit the official website of GermanLab in this link: [GermalLab](https://germanlab.netlify.app)
 ![Home](https://github.com/derblitzkrieger96/proyecto-final-dise-o-web-coderhouse/assets/100312715/cd5d0306-ee3b-4b67-9b36-8f568aa734bb)
 ![How_it_works](https://github.com/derblitzkrieger96/proyecto-final-dise-o-web-coderhouse/assets/100312715/717e28c6-0452-4d0e-bc61-c13bc174b54f)
 ![Explore](https://github.com/derblitzkrieger96/proyecto-final-dise-o-web-coderhouse/assets/100312715/92d55f02-2181-45b1-871a-9ecfcc1c6c59)
